@@ -1,0 +1,103 @@
+{
+  "fn": [
+    {
+      "subjectId": 1,
+      "name_th": "การเขียนโปรแกรมเบื้องต้น",
+      "name_eng": "Fundamentals of Programming",
+      "code": "10301111",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 1
+    },
+    {
+      "subjectId": 2,
+      "name_th": "เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "name_eng": "Information and Communications Technology ",
+      "code": "10301112",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 1
+    },
+    {
+      "subjectId": 3,
+      "name_th": "องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์   ",
+      "name_eng": "Computer Organization and Architecture",
+      "code": "10301114",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 2
+    },
+    {
+      "subjectId": 4,
+      "name_th": "การสร้างเนื้อหาดิจิทัล",
+      "name_eng": "Digital Content Creation",
+      "code": "10301115",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 6,
+      "name_th": "การเขียนโปรแกรมและทักษะการแก้ปัญหา  ",
+      "name_eng": "Programming and Problem Solving Skills",
+      "code": "10301212",
+      "credit": "3 (2-2-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 2
+    },
+    {
+      "subjectId": 14,
+      "name_th": "ทฤษฎีการคำนวณ",
+      "name_eng": "Theory of Computation",
+      "code": "10301311",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 15,
+      "name_th": "เทคนิคการเขียนโปรแกรมคอมพิวเตอร์",
+      "name_eng": "Computer Programming Techniques",
+      "code": "10301312",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 16,
+      "name_th": "วิธีการนิวเมอริคัล",
+      "name_eng": "Numerical Methods",
+      "code": "10301313",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 17,
+      "name_th": "หลักการเขียนโปรแกรมเชิงวัตถุ",
+      "name_eng": "Principles of Object-Oriented Programming",
+      "code": "10301314",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 53,
+      "name_th": "การเรียนรู้เครื่องจักรกลสำหรับโมบายแอปพลิเคชัน",
+      "name_eng": "Machine Learning for Mobile Application",
+      "code": "10301378",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science) กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 63,
+      "name_th": "คณิตศาสตร์สำหรับวิทยาการคอมพิวเตอร์",
+      "name_eng": "Mathematic for Computer Science",
+      "code": "10301211",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 3
+    }
+  ]
+}

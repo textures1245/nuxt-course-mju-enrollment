@@ -1,0 +1,48 @@
+[
+  {
+    "0": [
+      {
+        "name": "การเขียนโปรแกรมเบื้องต้น",
+        "name_eng": "Fundamentals of Programming",
+        "code": " 10301111",
+        "credit": "3 (2-3-5)"
+      },
+      {
+        "name": "เทคโนโลยีสารสนเทศและการสื่อสาร",
+        "name_eng": "Information and Communications Technology",
+        "code": " 10301112",
+        "credit": "3 (2-3-5)"
+      },
+      {
+        "name": "การสร้างเนื้อหาดิจิทัล",
+        "name_eng": "Digital Content Creation",
+        "code": "10301115",
+        "credit": "3 (2-3-5)"
+      },
+      {
+        "name": "การเขียนโปรแกรมและทักษะการแก้ปัญหา",
+        "name_eng": "Programming and Problem Solving Skills",
+        "code": "10301212",
+        "credit": "3 (2-3-5)"
+      },
+      {
+        "name": "ทฤษฎีการคำนวณ",
+        "name_eng": "Theory of Computation",
+        "code": "10301311 ",
+        "credit": "3 (2-3-5)"
+      },
+      {
+        "name": "เทคนิคการเขียนโปรแกรมคอมพิวเตอร์",
+        "name_eng": "Computer Programming Techniques",
+        "code": "10301312 ",
+        "credit": "3 (2-3-5)"
+      },
+      {
+        "name": "วิธีการนิวเมอริคัล",
+        "name_eng": "Numerical Methods",
+        "code": "10301312 ",
+        "credit": "3 (2-3-5)"
+      }
+    ]
+  }
+]
