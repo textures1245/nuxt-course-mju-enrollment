@@ -9,10 +9,10 @@ export default {
 </script>
 <script setup lang="ts">
 const courseState = useCourseStore();
-const courses: Ref<Course[]> = ref(courseState.course);
+const courses: Ref<Course[]> = ref(courseState.courses);
 
 watch(courseState, () => {
-  courses.value = courseState.getCourse;
+  courses.value = courseState.getCourses;
 });
 console.log(courses.value);
 </script>
@@ -24,7 +24,7 @@ console.log(courses.value);
     dense
     no-gutters
   >
-    <v-card v-for="c in courses" width="600">
+    <v-card v-for="c in courses" width="500">
       <v-col>
         <v-img
           height="200"
@@ -74,7 +74,8 @@ console.log(courses.value);
                 <div class="flex gap-2">
                   <strong>{{ c.name }}</strong>
                 </div>
-                <div class="badge badge-primary badge-sm">{{ c.code }}</div>
+                <p class="text-caption ">{{ c.name_eng }}</p>
+                <div class="badge badge-primary badge-sm">รหัสวิชา: {{ c.code }}</div>
               </div>
             </v-timeline-item>
             <v-timeline-item :dot-color="'green'" size="x-small">
@@ -84,7 +85,7 @@ console.log(courses.value);
                   <span class="badge badge-sm ml-1">@ {{ c.credit }}</span>
                 </div>
                 <div class="badge bg-green-600 border-green-600 badge-sm">
-                  หมวด: {{ c.group }}
+                  หมวด: {{ c.type }}
                 </div>
               </div>
             </v-timeline-item>

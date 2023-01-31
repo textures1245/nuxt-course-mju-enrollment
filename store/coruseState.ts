@@ -2,69 +2,80 @@ import { defineStore } from "pinia";
 import { Instructor, useInstructorStore } from "./instructorState";
 import z, { string } from "zod";
 
-const courseState = z.object({
-  instructorId: z.number(),
-  name: z.string().length(50),
+export const courseValidation = z.object({
+  instructor: z.object({
+    instructorId: z.number(),
+    imgSrc: z.string(),
+    name: z.string(),
+    position: z.string(),
+    edu: z.string(),
+    tel: z.string(),
+    email: z.string(),
+  }),
+  name: z.string(),
+  name_eng: z.string(),
   code: z.string(),
-  desc: z.string().length(100),
-  credit: z.string().length(3),
-  group: z.string(),
+  desc: z.string(),
+  credit: z.string(),
+  type: z.string(),
 });
 
 export const groupKeys = {
-  "fn": "asdsa"
+  fcs: "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์",
+  sa: "กลุ่มวิชาแนวคิดการวิเคราะห์และออกแบบ",
+  ad: "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน",
+  ns: "กลุ่มวิชาระบบเครือข่าย",
+  ds: "กลุ่มวิชาวิทยาการข้อมูล",
+  it: "กลุ่มวิชาอินเตอร์เน็ตในทุกสิ่ง",
+  ai: "กลุ่มวิชาปัญญาประดิษฐ์",
+  csb: "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ",
+  sc: "กลุ่มวิชาหัวข้อพิเศษ",
 };
 
 export type Course = {
-  instructorId: number;
   instructor: Instructor;
   name: string;
+  name_eng: string;
   code: string;
   desc: string;
   credit: string;
-  group: string;
+  type: string;
 };
 
 export interface CourseInterface {
-  instructorId: number;
   instructor: Instructor;
   name: string;
+  name_eng: string;
   code: string;
   desc: string;
   credit: string;
-  group: string;
+  type: string;
 }
 
 export class CourseClass {
   public constructor(
-    public instructorId: number,
     public instructor: Instructor,
     public name: string,
+    public name_eng: string,
     public code: string,
     public desc: string,
     public credit: string,
-    public group: string
+    public type: string
   ) {}
 }
 
 export const useCourseStore = defineStore("courseState", {
   state: () => {
     return {
-      course: <Course[]>[
-        new CourseClass(
-          0,
-          <Instructor>useInstructorStore().instructors[0],
-          "การวิเคราะห์และออกแบบเชิงวัตถุ",
-          "คพ343",
-          "adwadsadawdasdawdasdsadawdsa",
-          "3.0",
-          "ปฏิบัติ"
-        ),
-      ],
+      courses: <Course[]>[],
     };
   },
-  actions: {},
+  actions: {
+    pushState(c_state: Course) {
+      this.$state.courses.push(c_state);
+    },
+  },
   getters: {
-    getCourse: (state) => state.course,
+    getCourses: (state) => state.courses,
   },
 });

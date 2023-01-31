@@ -1,5 +1,5 @@
 {
-  "fn": [
+  "fcs": [
     {
       "subjectId": 1,
       "name_th": "การเขียนโปรแกรมเบื้องต้น",
@@ -98,6 +98,598 @@
       "credit": "3 (2-3-5)",
       "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
       "Subject_Term": 3
+    }
+  ],
+  "ad": [
+    {
+      "subjectId": 11,
+      "name_th": "เว็บเทคโนโลยี",
+      "name_eng": "Web Technology",
+      "code": "10301231",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": 3
+    },
+    {
+      "subjectId": 12,
+      "name_th": "การพัฒนาระบบฝั่งเซิร์ฟเวอร์",
+      "name_eng": "Server-side  System Development",
+      "code": "10301232",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": 4
+    },
+    {
+      "subjectId": 13,
+      "name_th": "การพัฒนาซอฟต์แวร์บนอุปกรณ์เคลื่อนที่",
+      "name_eng": "Software Development on Mobile Device",
+      "code": "10301233",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": 4
+    },
+    {
+      "subjectId": 18,
+      "name_th": "การพัฒนาซอฟต์แวร์ทางเกษตรบนอุปกรณ์เคลื่อนที่  ",
+      "name_eng": "Mobile Application Development for Agriculture",
+      "code": "10301331",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 19,
+      "name_th": "การพัฒนาซอฟต์แวร์บนระบบปฏิบัติการยูนิกซ์",
+      "name_eng": "Software Development on Unix Operating System",
+      "code": "10301332",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 20,
+      "name_th": "การพัฒนาโปรแกรมประยุกต์บนเดสก์ท็อป",
+      "name_eng": "Desktop Application Development",
+      "code": "10301333",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 21,
+      "name_th": "การพัฒนาแอปพลิเคชันข้ามแพลตฟอร์ม",
+      "name_eng": "Cross Platform Application Development",
+      "code": "10301334",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 22,
+      "name_th": "การออกแบบรูปแบบสำหรับซอฟต์แวร์",
+      "name_eng": "Pattern Design for Software",
+      "code": "10301335",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 23,
+      "name_th": "คอมพิวเตอร์กราฟิก",
+      "name_eng": "Computer Graphics",
+      "code": "10301336",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการพัฒนาระบบแอปพลิเคชัน (Application Development)",
+      "Subject_Term": null
+    }
+  ],
+  "ns": [
+    {
+      "subjectId": 5,
+      "name_th": "เครือข่ายคอมพิวเตอร์เบื้องต้น",
+      "name_eng": "Introduction to Computer Network ",
+      "code": "10301141",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": 2
+    },
+    {
+      "subjectId": 24,
+      "name_th": "การเข้ารหัสและความปลอดภัยในเครือข่าย",
+      "name_eng": "Cryptography  and Network Security",
+      "code": "10301341",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 25,
+      "name_th": "การประมวลผลแบบกลุ่มเมฆ",
+      "name_eng": "Cloud Computing",
+      "code": "10301342",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 26,
+      "name_th": "การเขียนโปรแกรมเครือข่าย",
+      "name_eng": "Network  Programming",
+      "code": "10301343",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 27,
+      "name_th": "เครือข่ายคอมพิวเตอร์",
+      "name_eng": "Computer  Networks",
+      "code": "10301344",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 28,
+      "name_th": "ระบบเครือข่ายไร้สาย",
+      "name_eng": "Wireless Networks",
+      "code": "10301345",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 29,
+      "name_th": "ระบบปฏิบัติการ  ",
+      "name_eng": "Operating System",
+      "code": "10301346",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 30,
+      "name_th": "วิศวกรรมการพัฒนาปฏิบัติการบนคลาวด์",
+      "name_eng": "Cloud Operation Development Engineering",
+      "code": "10301347",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    }
+  ],
+  "ds": [
+    {
+      "subjectId": 5,
+      "name_th": "เครือข่ายคอมพิวเตอร์เบื้องต้น",
+      "name_eng": "Introduction to Computer Network ",
+      "code": "10301141",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": 2
+    },
+    {
+      "subjectId": 24,
+      "name_th": "การเข้ารหัสและความปลอดภัยในเครือข่าย",
+      "name_eng": "Cryptography  and Network Security",
+      "code": "10301341",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 25,
+      "name_th": "การประมวลผลแบบกลุ่มเมฆ",
+      "name_eng": "Cloud Computing",
+      "code": "10301342",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 26,
+      "name_th": "การเขียนโปรแกรมเครือข่าย",
+      "name_eng": "Network  Programming",
+      "code": "10301343",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 27,
+      "name_th": "เครือข่ายคอมพิวเตอร์",
+      "name_eng": "Computer  Networks",
+      "code": "10301344",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 28,
+      "name_th": "ระบบเครือข่ายไร้สาย",
+      "name_eng": "Wireless Networks",
+      "code": "10301345",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 29,
+      "name_th": "ระบบปฏิบัติการ  ",
+      "name_eng": "Operating System",
+      "code": "10301346",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 30,
+      "name_th": "วิศวกรรมการพัฒนาปฏิบัติการบนคลาวด์",
+      "name_eng": "Cloud Operation Development Engineering",
+      "code": "10301347",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาระบบเครือข่าย (Network System)",
+      "Subject_Term": null
+    }
+  ],
+  "ai": [
+    {
+      "subjectId": 45,
+      "name_th": "อิเล็กทรอนิกส์เบื้องต้น",
+      "name_eng": "Introduction to Electronic Circuit",
+      "code": "10301367",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 46,
+      "name_th": "ปัญญาประดิษฐ์",
+      "name_eng": "Artificial Intelligence",
+      "code": "10301371",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 47,
+      "name_th": "การจำลองโดยคอมพิวเตอร์และการสร้างรูปแบบ",
+      "name_eng": "Computer Simulation and Modeling",
+      "code": "10301372",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 48,
+      "name_th": "การประมวลผลเชิงภาพ",
+      "name_eng": "Image Processing",
+      "code": "10301373",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 49,
+      "name_th": "การประมวลผลภาษาธรรมชาติ    ",
+      "name_eng": "Natural Language Processing",
+      "code": "10301374",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 50,
+      "name_th": "การแยกแยะข้อมูลและการแบ่งกลุ่มข้อมูล",
+      "name_eng": "Data Classification and Data Clustering ",
+      "code": "10301375",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 51,
+      "name_th": "การเรียนรู้ของเครื่องจักร",
+      "name_eng": "Machine Learning",
+      "code": "10301376",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 52,
+      "name_th": "การเรียนรู้ของเครื่องจักรขั้นสูง",
+      "name_eng": "Advanced Machine Learning ",
+      "code": "10301377",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 53,
+      "name_th": "การเรียนรู้เครื่องจักรกลสำหรับโมบายแอปพลิเคชัน",
+      "name_eng": "Machine Learning for Mobile Application",
+      "code": "10301378",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    }
+  ],
+  "csb": [
+    {
+      "subjectId": 1,
+      "name_th": "การเขียนโปรแกรมเบื้องต้น",
+      "name_eng": "Fundamentals of Programming",
+      "code": "10301111",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 1
+    },
+    {
+      "subjectId": 2,
+      "name_th": "เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "name_eng": "Information and Communications Technology ",
+      "code": "10301112",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 1
+    },
+    {
+      "subjectId": 3,
+      "name_th": "องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์   ",
+      "name_eng": "Computer Organization and Architecture",
+      "code": "10301114",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 2
+    },
+    {
+      "subjectId": 4,
+      "name_th": "การสร้างเนื้อหาดิจิทัล",
+      "name_eng": "Digital Content Creation",
+      "code": "10301115",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 6,
+      "name_th": "การเขียนโปรแกรมและทักษะการแก้ปัญหา  ",
+      "name_eng": "Programming and Problem Solving Skills",
+      "code": "10301212",
+      "credit": "3 (2-2-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 2
+    },
+    {
+      "subjectId": 14,
+      "name_th": "ทฤษฎีการคำนวณ",
+      "name_eng": "Theory of Computation",
+      "code": "10301311",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 15,
+      "name_th": "เทคนิคการเขียนโปรแกรมคอมพิวเตอร์",
+      "name_eng": "Computer Programming Techniques",
+      "code": "10301312",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 16,
+      "name_th": "วิธีการนิวเมอริคัล",
+      "name_eng": "Numerical Methods",
+      "code": "10301313",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 17,
+      "name_th": "หลักการเขียนโปรแกรมเชิงวัตถุ",
+      "name_eng": "Principles of Object-Oriented Programming",
+      "code": "10301314",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 53,
+      "name_th": "การเรียนรู้เครื่องจักรกลสำหรับโมบายแอปพลิเคชัน",
+      "name_eng": "Machine Learning for Mobile Application",
+      "code": "10301378",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)กลุ่มวิชาปัญญาประดิษฐ์  (Artificial Intelligence)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 54,
+      "name_th": "คอมพิวเตอร์วิทัศน์",
+      "name_eng": "Computer Vision   ",
+      "code": "10301379",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ (Computer Science for Business)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 55,
+      "name_th": "การบริหารโครงการคอมพิวเตอร์",
+      "name_eng": "Computer Project Management",
+      "code": "10301381",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ (Computer Science for Business)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 56,
+      "name_th": "การเป็นผู้ประกอบการทางด้านคอมพิวเตอร์และนวัตกรรม",
+      "name_eng": "Innovation and Computer-Based Entrepreneurship",
+      "code": "10301382",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ (Computer Science for Business)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 57,
+      "name_th": "บล็อกเชน และคริปโทเคอร์เรนซี่",
+      "name_eng": "Blockchain and Cryptocurrency",
+      "code": "10301383",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ (Computer Science for Business)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 58,
+      "name_th": "ระบบธุรกิจอัจฉริยะ  ",
+      "name_eng": "Business Intelligence System",
+      "code": "10301384",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ (Computer Science for Business)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 59,
+      "name_th": "ระบบบริหารสารสนเทศเพื่อการจัดการ",
+      "name_eng": "Management Information System",
+      "code": "10301385",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาการประยุกต์งานด้านธุรกิจ (Computer Science for Business)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 63,
+      "name_th": "คณิตศาสตร์สำหรับวิทยาการคอมพิวเตอร์",
+      "name_eng": "Mathematic for Computer Science",
+      "code": "10301211",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาความรู้พื้นฐานทางวิทยาการคอมพิวเตอร์ (Fundamental Computer Science)",
+      "Subject_Term": 3
+    }
+  ],
+  "sa": [
+    {
+      "subjectId": 7,
+      "name_th": "การวิเคราะห์และออกแบบเชิงวัตถุ",
+      "name_eng": "Object Oriented Analysis and Design",
+      "code": "10301221",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาแนวคิดการวิเคราะห์และออกแบบ (System Analysis)",
+      "Subject_Term": 4
+    },
+    {
+      "subjectId": 8,
+      "name_th": "โครงสร้างข้อมูลและอัลกอริทึม",
+      "name_eng": "Data Structure and Algorithm ",
+      "code": "10301222",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาแนวคิดการวิเคราะห์และออกแบบ (System Analysis)",
+      "Subject_Term": 3
+    },
+    {
+      "subjectId": 9,
+      "name_th": "ฐานข้อมูลโครงสร้างเชิงสัมพันธ์",
+      "name_eng": "Structure Relational  Database",
+      "code": "10301223",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาแนวคิดการวิเคราะห์และออกแบบ (System Analysis)",
+      "Subject_Term": 3
+    },
+    {
+      "subjectId": 10,
+      "name_th": "ฐานข้อมูลแบบไม่มีโครงสร้าง",
+      "name_eng": "Unstructured Database",
+      "code": "10301224",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาแนวคิดการวิเคราะห์และออกแบบ (System Analysis)",
+      "Subject_Term": 4
+    },
+    {
+      "subjectId": 62,
+      "name_th": "วิศวรกรรมซอฟต์แวร์",
+      "name_eng": "Software Engineering",
+      "code": "10301225",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาแนวคิดการวิเคราะห์และออกแบบ (System Analysis)",
+      "Subject_Term": 3
+    }
+  ],
+  "it": [
+    {
+      "subjectId": 39,
+      "name_th": "อินเทอร์เน็ตในทุกสิ่ง",
+      "name_eng": "Internet of Things",
+      "code": "10301361",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาอินเทอร์เน็ตในทุกสิ่ง (Internet of Things)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 40,
+      "name_th": "การโปรแกรมด้วยภาษาระดับต่ำ",
+      "name_eng": "Low-level Programming Language",
+      "code": "10301362",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาอินเทอร์เน็ตในทุกสิ่ง (Internet of Things)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 41,
+      "name_th": "การออกแบบและการพัฒนาระบบทำงานแบบทันที",
+      "name_eng": "Design and Development of Real-Time Systems",
+      "code": "10301363",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาอินเทอร์เน็ตในทุกสิ่ง (Internet of Things)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 42,
+      "name_th": "ตรรกศาสตร์เชิงดิจิทัลและอุปกรณ์อัจฉริยะ",
+      "name_eng": "Digital Logic and Smart Device",
+      "code": "10301364",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาอินเทอร์เน็ตในทุกสิ่ง (Internet of Things)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 43,
+      "name_th": "ระบบคอมพิวเตอร์และภาษาแอสเซมบลี",
+      "name_eng": "Computer System and Assembly Language Programming",
+      "code": "10301365",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาอินเทอร์เน็ตในทุกสิ่ง (Internet of Things)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 44,
+      "name_th": "วิทยาการสมองกลฝังตัว",
+      "name_eng": "Embedded System",
+      "code": "10301366",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาอินเทอร์เน็ตในทุกสิ่ง (Internet of Things)",
+      "Subject_Term": null
+    }
+  ],
+  "sc": [
+    {
+      "subjectId": 60,
+      "name_th": "หัวข้อพิเศษทางวิทยาการคอมพิวเตอร์ 1",
+      "name_eng": "Special Topics in Computer Science 1",
+      "code": "10301391",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาหัวข้อพิเศษ (Special Topics)",
+      "Subject_Term": null
+    },
+    {
+      "subjectId": 61,
+      "name_th": "หัวข้อพิเศษทางวิทยาการคอมพิวเตอร์ 2",
+      "name_eng": "Special Topics in Computer Science 2",
+      "code": "10301392",
+      "credit": "3 (2-3-5)",
+      "desc": "กลุ่มวิชาหัวข้อพิเศษ (Special Topics)",
+      "Subject_Term": null
     }
   ]
 }

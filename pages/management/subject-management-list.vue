@@ -2,7 +2,7 @@
 import { useCourseStore } from "~/store/coruseState";
 
 const courseState = useCourseStore();
-let courses = courseState.getCourse;
+let courses = courseState.getCourses;
 </script>
 <template>
   <v-container>

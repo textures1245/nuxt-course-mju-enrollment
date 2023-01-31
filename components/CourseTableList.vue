@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <v-table class="text-sm lg:text-base" fixed-header height="300px">
+  <v-table class="text-xs lg:text-sm" fixed-header height="600px">
     <thead>
       <tr>
         <th class="text-left">Course</th>
@@ -25,7 +25,7 @@ export default {
         <td>{{ item.name }}</td>
         <td>{{ item.code }}</td>
         <td>{{ item.credit }}</td>
-        <td>{{ item.group }}</td>
+        <td>{{ item.type }}</td>
         <td>
           <div
             class="flex items-center lg:flex-row flex-col justify-center mt-2"
