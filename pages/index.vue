@@ -20,6 +20,7 @@ export type Campus = {
 export default {
   data() {
     return {
+      freezed: true,
       cards: {
         first: {
           title: "ยินดีต้อนรัอนรับสู่มหาวิทยาลัยแม่โจ้",
@@ -109,7 +110,30 @@ export default {
         ></v-img>
       </div>
     </div>
-    <div v-else>
+    <div v-else class="flex flex-col gap-16">
+      <div
+        class="hero-text text-4xl flex justify-center items-center gap-6 text-white"
+      >
+        <img
+          width="64"
+          src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png"
+        />
+        <div class="">
+          <p class="underline underline-offset-4">MAEJO UNIVERSITY</p>
+          <p>COURSE PLAN NEW</p>
+        </div>
+      </div>
+
+      <div class="w-full grid grid-cols-1 z-10">
+        <NewsCard
+          img-src="https://stu2.mju.ac.th/picture/information/374e7d3c9ff146f6a91c398b91229eb7.jpg"
+          height="10rem"
+          :title="cards.first.title"
+          :sub-title="cards.first.subtitle"
+        ></NewsCard>
+      </div>
+    </div>
+    <!-- <div v-if="freezed">
       <div class="flex flex-col gap-16">
         <div
           class="hero-text text-4xl flex justify-center items-center gap-6 text-white"
@@ -144,7 +168,7 @@ export default {
           </div>
         </section>
       </div>
-    </div>
+    </div> -->
   </v-container>
 </template>
 <style scoped>

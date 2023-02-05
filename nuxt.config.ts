@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   modules: ["@pinia/nuxt", "@formkit/nuxt"],
 
-  ssr: false,
+  ssr: true,
   typescript: {
     shim: false,
   },
