@@ -18,13 +18,16 @@ console.log(courses.value);
 </script>
 <template>
   <v-row
+    v-if="courses.length > 0"
     justify="center"
     class="gap-8"
     align-content="space-between"
     dense
     no-gutters
   >
-    <v-card v-for="c in courses" width="500">
+    <div class="bg-indigo-600 h-[40vh] absolute w-full -z-10"></div>
+
+    <v-card class="mt-3" v-for="(c, index) in courses" width="500">
       <v-col>
         <v-img
           height="200"
@@ -59,11 +62,13 @@ console.log(courses.value);
         </v-img>
 
         <v-card-text>
-          <div
-            class="btn btn-xs md:btn-sm btn-accent font-weight-bold ms-1 mb-2"
-          >
-            Course Detail
-          </div>
+          <NuxtLink :to="`/subject_id/${index}`">
+            <div
+              class="btn btn-xs md:btn-sm btn-accent font-weight-bold ms-1 mb-2"
+            >
+              Course Detail
+            </div>
+          </NuxtLink>
 
           <v-timeline density="compact" align="start">
             <v-timeline-item
@@ -74,8 +79,10 @@ console.log(courses.value);
                 <div class="flex gap-2">
                   <strong>{{ c.name }}</strong>
                 </div>
-                <p class="text-caption ">{{ c.name_eng }}</p>
-                <div class="badge badge-primary badge-sm">รหัสวิชา: {{ c.code }}</div>
+                <p class="text-caption">{{ c.name_eng }}</p>
+                <div class="badge badge-primary badge-sm">
+                  รหัสวิชา: {{ c.code }}
+                </div>
               </div>
             </v-timeline-item>
             <v-timeline-item :dot-color="'green'" size="x-small">
@@ -104,4 +111,5 @@ console.log(courses.value);
       </v-col>
     </v-card>
   </v-row>
+  <StateNotFound v-else></StateNotFound>
 </template>

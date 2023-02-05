@@ -1,8 +1,44 @@
+<script lang="ts">
+import { Course, useCourseStore } from "~/store/coruseState";
+import Swal from "sweetalert2";
+export default {
+  methods: {
+    resetStates(): void {
+      Swal.fire({
+        title: "Do you really want to remove all state?",
+        showDenyButton: true,
+        confirmButtonText: "Yes",
+        denyButtonText: `No`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          useCourseStore().deleteState("all");
+          Swal.fire("All States had been removed!", "", "success");
+        } else if (result.isDenied) {
+          Swal.fire("Action got denied", "", "info");
+        }
+      });
+    },
+  },
+};
+</script>
 <script setup lang="ts">
-import { useCourseStore } from "~/store/coruseState";
-
 const courseState = useCourseStore();
-let courses = courseState.getCourses;
+let courses = ref(<Course[]>courseState.getCourses);
+
+//! watch states
+watch(
+  useCourseStore(),
+  () => {
+    courses.value = courseState.courses;
+    console.log(courses);
+  },
+  { deep: true }
+);
+
+computed
+
+//- methods
 </script>
 <template>
   <v-container>
@@ -17,7 +53,12 @@ let courses = courseState.getCourses;
           <DialogWindow></DialogWindow>
 
           <div class="">
-            <v-btn icon="mdi-cog" class="text-black" variant="plain">
+            <v-btn
+              @click="resetStates"
+              icon="mdi-cog"
+              class="text-black"
+              variant="plain"
+            >
               <v-tooltip
                 activator="parent"
                 class="text-center !text-xs"
@@ -29,7 +70,10 @@ let courses = courseState.getCourses;
           </div>
         </v-system-bar>
       </v-layout>
-      <CourseTableList :course-states="courses"></CourseTableList>
+      <CourseTableList
+        v-if="courses.length > 0"
+        :course-states="courses"
+      ></CourseTableList>
     </div>
   </v-container>
 </template>

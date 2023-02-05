@@ -52,16 +52,21 @@ const paths = [
               @click.stop="rail = !rail"
             ></v-btn>
           </template>
-          <div class="badge badge-sm text-xs badge-primary">
-            {{ user.role }}
-          </div>
+          <NuxtLink
+            :to="'/developer/traiphakh_sittikaew'"
+            active-class="bg-base-300 font-semibold"
+          >
+            <div class="btn btn-xs text-xs btn-primary">
+              Profile Setting
+            </div>
+          </NuxtLink>
         </v-list-item>
 
         <hr class="border-base-content" />
         <v-list density="compact" nav v-for="p in paths">
           <NuxtLink :to="p.path" active-class="bg-base-300 font-semibold">
             <v-list-item
-            :active="false"
+              :active="false"
               :prepend-icon="p.icon"
               :title="p.title"
               :value="p.title"

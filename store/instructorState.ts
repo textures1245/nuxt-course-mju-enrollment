@@ -23,10 +23,11 @@ export const useInstructorStore = defineStore("instructor", {
       //         rtn = {};
       //       return (rtn?[key] = obj?[key]), rtn;
       //     }),
-      instructors: instructorJson[0],
+      instructors: instructorJson,
     };
   },
   getters: {
+    
     getState: (state) => state.instructors,
   },
   actions: {},

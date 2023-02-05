@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@pinia/nuxt", "@formkit/nuxt"],
-  ssr: false,
+  modules: [
+    "@pinia/nuxt",
+    "@formkit/nuxt",
+  ],
+
+  ssr: true,
   typescript: {
     shim: false,
   },
@@ -18,11 +22,19 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
   },
-
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+  nitro: {
+    devProxy: {
+      "/campusApi": {
+        target: "https://api.codename-t.com/campus",
+        changeOrigin: true,
+        prependPath: true,
+      },
     },
   },
 });

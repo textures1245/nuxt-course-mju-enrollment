@@ -7,15 +7,21 @@ export default {
 </script>
 <script lang="ts" setup></script>
 <template>
-  
-  <v-app-bar :border="true" class="" title="CourseManager" app>
-    
+  <v-app-bar :border="true" app>
     <template v-slot:prepend>
       <v-app-bar-nav-icon
-        class="text-primary"
-        icon="mdi-book-education"
-      ></v-app-bar-nav-icon>
+        src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png"
+      >
+        <v-img
+          width="32"
+          src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png"
+        ></v-img>
+      </v-app-bar-nav-icon>
     </template>
+    <v-app-bar-title>
+      <p class="">Maejo University</p>
+      <p class="text-caption">Course Management</p>
+    </v-app-bar-title>
     <div class="text-xs text-base-content breadcrumbs mr-3">
       <ul>
         <li v-for="name in $route.path.split('/')">

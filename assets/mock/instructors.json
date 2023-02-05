@@ -1,112 +1,110 @@
-{
-  "0": [
-    {
-      "instructorId": 0,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Attawit.png",
-      "name": "อาจารย์ อรรถวิทชังคมานนท์",
-      "position": "ประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
-      "edu": "วิทยาศาสตรมหาบัณฑิต วิทยาการคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่",
-      "tel": "053-873890-9313",
-      "email": "attawit@mju.ac.th"
-    },
-    {
-      "instructorId": 1,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Kongkarn.png",
-      "name": "ผู้ช่วยศาสตราจารย์ ก่องกาญจน์ดุลยไชย",
-      "position": "เลขานุการหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
-      "edu": "วิทยาศาสตรมหาบัณฑิต วิทยาการคอมพิวเตอร์ สถาบันบัณฑิตพัฒนบริหารศาสตร์",
-      "tel": "053-873890-9314",
-      "email": "kongkarn@mju.ac.th"
-    },
-    {
-      "instructorId": 2,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Kittikorn.png",
-      "name": "อาจารย์ ดร. กิตติกร หาญตระกูล",
-      "position": "ประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชานวัตกรรมเทคโนโลยีดิจิทัล",
-      "edu": "ปรัชญาดุษฎีบัณฑิต บริหารศาสตร์-การบริหารเทคโนโลยี มหาวิทยาลัยแม่โจ้",
-      "tel": "053-873890-9321",
-      "email": "kittikor@mju.ac.th"
-    },
-    {
-      "instructorId": 3,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Snit.png",
-      "name": "ผู้ช่วยศาสตราจารย์ ดร. สนิท สิทธิ",
-      "position": "ผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ",
-      "edu": "ศึกษาศาสตรดุษฎีบัณฑิต เทคโนโลยีการศึกษา มหาวิทยาลัยเกษตรศาสตร์",
-      "tel": "053-873890-9315",
-      "email": "snit@mju.ac.th"
-    },
-    {
-      "instructorId": 4,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Alongkot.png",
-      "name": "อาจารย์ อลงกต กองมณี",
-      "position": "อาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
-      "edu": "Master of Science Information Systems Management Ferris State University",
-      "tel": "053-873890-93",
-      "email": "alongkot@mju.ac.th"
-    },
-    {
-      "instructorId": 5,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Panuwat.png",
-      "name": "ผู้ช่วยศาสตราจารย์ ภานุวัฒน์ เมฆะ",
-      "position": "รองประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
-      "edu": "วิทยาศาสตรมหาบัณฑิต วิทยาการคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่",
-      "tel": "053-873890-9320",
-      "email": "panuwat_m@mju.ac.th"
-    },
-    {
-      "instructorId": 6,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/thumbnail/PersonnelPic_1646021175.png",
-      "name": "ผู้ช่วยศาสตราจารย์ ดร. พาสน์ ปราโมกข์ชน",
-      "position": "เลขานุการอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชานวัตกรรมเทคโนโลยีดิจิทัล",
-      "edu": "วิศวกรรมศาสตรดุษฎีบัณฑิต วิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์",
-      "tel": "053-873890-9316",
-      "email": "part@mju.ac.th"
-    },
-    {
-      "instructorId": 7,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Paween.png",
-      "name": "ผู้ช่วยศาสตราจารย์ ดร. ปวีณ เขื่อนแก้ว",
-      "position": "รองประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชานวัตกรรมเทคโนโลยีดิจิทัล",
-      "edu": "วิศวกรรมศาสตรดุษฎีบัณฑิต วิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์",
-      "tel": "053-873896",
-      "email": "paween_k@mju.ac.th"
-    },
-    {
-      "instructorId": 8,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/thumbnail/PersonnelPic_1646021268.png",
-      "name": "อาจารย์ ดร. พยุงศักดิ์ เกษมสำราญ",
-      "position": "อาจารย์",
-      "edu": "ปรัชญาดุษฎีบัณฑิตวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่",
-      "tel": "053-873890-9317 ",
-      "email": "payungsak_kae@mju.ac.th"
-    },
-    {
-      "instructorId": 9,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Somnuek.png",
-      "name": "อาจารย์ ดร. สมนึก สินธุปวน",
-      "position": "อาจารย์",
-      "edu": "ปรัชญาดุษฎีบัณฑิต วิทยาการคอมพิวเตอร์ (หลักสูตรนานาชาติ) สถาบันบัณฑิตพัฒนบริหารศาสตร์",
-      "tel": "053-873890-9324 ",
-      "email": "somnuk@mju.ac.th"
-    },
-    {
-      "instructorId": 10,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Nasi.png",
-      "name": "อาจารย์ ดร. นษิ ตันติธารานุกุล",
-      "position": "อาจารย์",
-      "edu": "ปรัชญาดุษฎีบัณฑิตวิศวกรรม คอมพิวเตอร์มหาวิทยาลัยเชียงใหม่",
-      "tel": "053-873897 ",
-      "email": "nasi@mju.ac.th"
-    },
-    {
-      "instructorId": 11,
-      "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Kitisak.png",
-      "name": "อาจารย์ ดร. กิติศักดิ์ โอสถานันต์กุล",
-      "position": "อาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
-      "edu": "Doctor of Philosophy Computer Science The University of Manchester",
-      "tel": "053-873897 ",
-      "email": "kit_o@mju.ac.th"
-    }
-  ]
-}
+[
+  {
+    "instructorId": 0,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Attawit.png",
+    "name": "อาจารย์ อรรถวิทชังคมานนท์",
+    "position": "ประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
+    "edu": "วิทยาศาสตรมหาบัณฑิต วิทยาการคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่",
+    "tel": "053-873890-9313",
+    "email": "attawit@mju.ac.th"
+  },
+  {
+    "instructorId": 1,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Kongkarn.png",
+    "name": "ผู้ช่วยศาสตราจารย์ ก่องกาญจน์ดุลยไชย",
+    "position": "เลขานุการหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
+    "edu": "วิทยาศาสตรมหาบัณฑิต วิทยาการคอมพิวเตอร์ สถาบันบัณฑิตพัฒนบริหารศาสตร์",
+    "tel": "053-873890-9314",
+    "email": "kongkarn@mju.ac.th"
+  },
+  {
+    "instructorId": 2,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Kittikorn.png",
+    "name": "อาจารย์ ดร. กิตติกร หาญตระกูล",
+    "position": "ประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชานวัตกรรมเทคโนโลยีดิจิทัล",
+    "edu": "ปรัชญาดุษฎีบัณฑิต บริหารศาสตร์-การบริหารเทคโนโลยี มหาวิทยาลัยแม่โจ้",
+    "tel": "053-873890-9321",
+    "email": "kittikor@mju.ac.th"
+  },
+  {
+    "instructorId": 3,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Snit.png",
+    "name": "ผู้ช่วยศาสตราจารย์ ดร. สนิท สิทธิ",
+    "position": "ผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ",
+    "edu": "ศึกษาศาสตรดุษฎีบัณฑิต เทคโนโลยีการศึกษา มหาวิทยาลัยเกษตรศาสตร์",
+    "tel": "053-873890-9315",
+    "email": "snit@mju.ac.th"
+  },
+  {
+    "instructorId": 4,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Alongkot.png",
+    "name": "อาจารย์ อลงกต กองมณี",
+    "position": "อาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
+    "edu": "Master of Science Information Systems Management Ferris State University",
+    "tel": "053-873890-93",
+    "email": "alongkot@mju.ac.th"
+  },
+  {
+    "instructorId": 5,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Panuwat.png",
+    "name": "ผู้ช่วยศาสตราจารย์ ภานุวัฒน์ เมฆะ",
+    "position": "รองประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
+    "edu": "วิทยาศาสตรมหาบัณฑิต วิทยาการคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่",
+    "tel": "053-873890-9320",
+    "email": "panuwat_m@mju.ac.th"
+  },
+  {
+    "instructorId": 6,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/thumbnail/PersonnelPic_1646021175.png",
+    "name": "ผู้ช่วยศาสตราจารย์ ดร. พาสน์ ปราโมกข์ชน",
+    "position": "เลขานุการอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชานวัตกรรมเทคโนโลยีดิจิทัล",
+    "edu": "วิศวกรรมศาสตรดุษฎีบัณฑิต วิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์",
+    "tel": "053-873890-9316",
+    "email": "part@mju.ac.th"
+  },
+  {
+    "instructorId": 7,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Paween.png",
+    "name": "ผู้ช่วยศาสตราจารย์ ดร. ปวีณ เขื่อนแก้ว",
+    "position": "รองประธานอาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชานวัตกรรมเทคโนโลยีดิจิทัล",
+    "edu": "วิศวกรรมศาสตรดุษฎีบัณฑิต วิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์",
+    "tel": "053-873896",
+    "email": "paween_k@mju.ac.th"
+  },
+  {
+    "instructorId": 8,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/thumbnail/PersonnelPic_1646021268.png",
+    "name": "อาจารย์ ดร. พยุงศักดิ์ เกษมสำราญ",
+    "position": "อาจารย์",
+    "edu": "ปรัชญาดุษฎีบัณฑิตวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่",
+    "tel": "053-873890-9317 ",
+    "email": "payungsak_kae@mju.ac.th"
+  },
+  {
+    "instructorId": 9,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Somnuek.png",
+    "name": "อาจารย์ ดร. สมนึก สินธุปวน",
+    "position": "อาจารย์",
+    "edu": "ปรัชญาดุษฎีบัณฑิต วิทยาการคอมพิวเตอร์ (หลักสูตรนานาชาติ) สถาบันบัณฑิตพัฒนบริหารศาสตร์",
+    "tel": "053-873890-9324 ",
+    "email": "somnuk@mju.ac.th"
+  },
+  {
+    "instructorId": 10,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Nasi.png",
+    "name": "อาจารย์ ดร. นษิ ตันติธารานุกุล",
+    "position": "อาจารย์",
+    "edu": "ปรัชญาดุษฎีบัณฑิตวิศวกรรม คอมพิวเตอร์มหาวิทยาลัยเชียงใหม่",
+    "tel": "053-873897 ",
+    "email": "nasi@mju.ac.th"
+  },
+  {
+    "instructorId": 11,
+    "imgSrc": "https://wwwdev.csmju.com/images/personnel/original/Kitisak.png",
+    "name": "อาจารย์ ดร. กิติศักดิ์ โอสถานันต์กุล",
+    "position": "อาจารย์ผู้รับผิดชอบหลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์",
+    "edu": "Doctor of Philosophy Computer Science The University of Manchester",
+    "tel": "053-873897 ",
+    "email": "kit_o@mju.ac.th"
+  }
+]

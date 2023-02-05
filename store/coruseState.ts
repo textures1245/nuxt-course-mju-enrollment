@@ -74,6 +74,16 @@ export const useCourseStore = defineStore("courseState", {
     pushState(c_state: Course) {
       this.$state.courses.push(c_state);
     },
+    getCourseByIndex(index: number): Course | null {
+      return this.$state.courses[index] ? this.$state.courses[index] : null;
+    },
+    deleteState(mode: "single" | "all", index?: number) {
+      if (mode === "single" && typeof index !== "undefined") {
+        this.$state.courses.splice(index, 1);
+      } else {
+        this.$state.courses = <Course[]>[];
+      }
+    },
   },
   getters: {
     getCourses: (state) => state.courses,

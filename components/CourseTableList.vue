@@ -1,15 +1,48 @@
 <script lang="ts">
-// @ts-nocheck
-import { Course } from "~~/store/coruseState";
+import { Course, useCourseStore } from "~~/store/coruseState";
+import { useDisplay } from "vuetify";
+import Swal from "sweetalert2";
 export default {
   props: {
-    courseStates: <Course[]>[],
+    courseStates: Object,
+  },
+  data() {
+    return {
+      display: ref(useDisplay())
+    }
+  },
+  computed: {
+    autoHight() {
+      if (this.display.mdAndDown) {
+        return '';
+      } else {
+        return '600px'
+      }
+    }
+  },
+  methods: {
+    removeState(index: number) {
+      Swal.fire({
+        title: "Do you really want to remove this state?",
+        showDenyButton: true,
+        confirmButtonText: "Yes",
+        denyButtonText: `No`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          useCourseStore().deleteState("single", index);
+          Swal.fire("State had been removed", "", "success");
+        } else if (result.isDenied) {
+          Swal.fire("Action got denied", "", "info");
+        }
+      });
+    },
   },
 };
 </script>
 
 <template>
-  <v-table class="text-xs lg:text-sm" fixed-header height="600px">
+  <v-table class="text-xs lg:text-sm" fixed-header :height="autoHight">
     <thead>
       <tr>
         <th class="text-left">Course</th>
@@ -21,7 +54,7 @@ export default {
       </tr>
     </thead>
     <tbody>
-      <tr v-for="item in <Course[]>courseStates" :key="item.name">
+      <tr v-for="item, index in <Course[]>courseStates" :key="item.name">
         <td>{{ item.name }}</td>
         <td>{{ item.code }}</td>
         <td>{{ item.credit }}</td>
@@ -39,7 +72,12 @@ export default {
           </div>
         </td>
         <td>
-          <button class="btn btn-error btn-xs text-start">remove</button>
+          <button
+            @click="removeState(index)"
+            class="btn btn-error btn-xs text-start"
+          >
+            remove
+          </button>
         </td>
       </tr>
     </tbody>
