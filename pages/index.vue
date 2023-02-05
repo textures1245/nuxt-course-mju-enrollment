@@ -1,5 +1,5 @@
 <script lang="ts">
-import test from "node:test";
+// @ts-nocheck
 import { useDisplay } from "vuetify";
 
 export type Campus = {
