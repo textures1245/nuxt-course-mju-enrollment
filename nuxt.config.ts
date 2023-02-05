@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    "@pinia/nuxt",
-    "@formkit/nuxt",
-  ],
+  modules: ["@pinia/nuxt", "@formkit/nuxt"],
 
   ssr: true,
   typescript: {
