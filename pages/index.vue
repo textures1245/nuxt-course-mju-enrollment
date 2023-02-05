@@ -1,21 +1,7 @@
-<!-- useFetch(() => `${this.campusAPI}?faculty_id=6`, {
-  method: "GET",
-  mode: "no-cors",
-  params: { faculty_id: 6 },
-  headers: {
-    "Content-Type": "application/json",
-  },
-  onResponse({ request, response, options }) {
-    response
-      .json()
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-  },
-}); -->
 <script lang="ts">
-// @ts-nocheck
+import test from "node:test";
 import { useDisplay } from "vuetify";
-import { ofetch } from "ofetch";
+
 export type Campus = {
   campus_id: string;
   campus_name_th: string;
@@ -63,18 +49,21 @@ export default {
           body: <Campus>{},
         },
       },
-      campusBody: {} as any,
     };
   },
   mounted() {
     for (let i = 0; i < 3; i++) {
-      let res = this.fetchApi("faculty_id");
+      let res = this.fetchApi(
+        `faculty_id=${Math.floor(Math.random() * 10) + 3}`
+      );
       res
         .then((campus) => {
           let key = i as any as keyof Object;
           if (campus) {
             this.campus[key].body = campus;
-            this.campus[key]["facultyName"] = campus[0][0].faculty_name_th;
+            this.campus[key]["facultyName"] = {
+              ...campus[0][0],
+            }.faculty_name_th;
             console.log(this.campus);
           }
           this.campus[key]["onLoaded"] = false;
@@ -89,10 +78,10 @@ export default {
         "Access-Control-Allow-Origin",
         "http://localhost:3000",
       ]);
-      const res = await ofetch(
-        `${this.campusAPI}?${query}=${Math.floor(Math.random() * 11) + 3}`
-      );
-      console.log(res);
+      const res = await $fetch(`${this.campusAPI}?${query}`, {
+        mode: "no-cors",
+        method: "get",
+      });
       if (res) {
         try {
           return [{ ...res }] as Campus[];
@@ -102,6 +91,7 @@ export default {
       } else {
         console.log("Value not found");
       }
+      console.log(res);
     },
   },
 };
