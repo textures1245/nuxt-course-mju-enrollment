@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      loadingProps: true,
       dev: {
         name: "Traiphakh Sittikaew",
         facutly: "Science",
@@ -19,96 +20,103 @@ export default {
 </script>
 <template>
   <div>
-    <div class="bg-sky-400 h-[40vh] absolute w-full -z-10"></div>
+    <LoadingProps
+      v-if="loadingProps"
+      @loaded-async="(loaded) => (loadingProps = loaded)"
+    ></LoadingProps>
+    <div v-else class="">
+      <div class="bg-sky-400 h-[40vh] absolute w-full -z-10"></div>
+      <v-container>
+        <v-card color="basil">
+          <v-card-title class="text-center justify-center py-6">
+            <h1 class="font-weight-bold text-h2 text-basil">PHAKH</h1>
+          </v-card-title>
 
-    <v-container>
-      <v-card color="basil">
-        <v-card-title class="text-center justify-center py-6">
-          <h1 class="font-weight-bold text-h2 text-basil">PHAKH</h1>
-        </v-card-title>
+          <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
+            <v-tab v-for="item in items" :key="item" :value="item">
+              {{ item }}
+            </v-tab>
+          </v-tabs>
 
-        <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
-          <v-tab v-for="item in items" :key="item" :value="item">
-            {{ item }}
-          </v-tab>
-        </v-tabs>
-
-        <v-window v-model="tab">
-          <v-window-item
-            v-for="(item, index) in items"
-            :key="item"
-            :value="item"
-          >
-            <v-card color="basil" flat>
-              <v-card-text>
-                <div
-                  class="grid grid-cols-1 gap-6 place-items-center md:grid-cols-2 mx-auto"
-                >
-                  <div class="">
-                    <v-avatar size="180" color="blue-lighten-2">
-                      <v-img
-                        :lazy-src="dev.imgSrc"
-                        width="180"
-                        :src="dev.imgSrc"
-                      >
-                        <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              class=""
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row> </template
-                      ></v-img>
-                    </v-avatar>
+          <v-window v-model="tab">
+            <v-window-item
+              v-for="(item, index) in items"
+              :key="item"
+              :value="item"
+            >
+              <v-card color="basil" flat>
+                <v-card-text>
+                  <div
+                    class="grid grid-cols-1 gap-6 place-items-center md:grid-cols-2 mx-auto"
+                  >
+                    <div class="">
+                      <v-avatar size="180" color="blue-lighten-2">
+                        <v-img
+                          :lazy-src="dev.imgSrc"
+                          width="180"
+                          :src="dev.imgSrc"
+                        >
+                          <template v-slot:placeholder>
+                            <v-row
+                              class="fill-height ma-0"
+                              align="center"
+                              justify="center"
+                            >
+                              <v-progress-circular
+                                class=""
+                                indeterminate
+                                color="grey lighten-5"
+                              ></v-progress-circular>
+                            </v-row> </template
+                        ></v-img>
+                      </v-avatar>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="flex gap-4">
+                        <v-icon
+                          icon="mdi-card-account-details-outline"
+                        ></v-icon>
+                        <div class="">
+                          <p class="">{{ dev.name }}</p>
+                          <p class="text-caption">Full name</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <v-icon icon="mdi-information-variant"></v-icon>
+                        <div class="">
+                          <p class="">{{ dev.facutly }}</p>
+                          <p class="text-caption">Faculty</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <v-icon icon="mdi-account-school-outline"></v-icon>
+                        <div class="">
+                          <p class="">{{ dev.major }}</p>
+                          <p class="text-caption">Major</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <v-icon icon="mdi-account-convert"></v-icon>
+                        <div class="">
+                          <p class="">{{ dev.year }}</p>
+                          <p class="text-caption">Student Year</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <v-icon icon="mdi-identifier"></v-icon>
+                        <div class="">
+                          <p class="">{{ dev.code }}</p>
+                          <p class="text-caption">Student ID</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <div class="flex gap-4">
-                      <v-icon icon="mdi-card-account-details-outline"></v-icon>
-                      <div class="">
-                        <p class="">{{ dev.name }}</p>
-                        <p class="text-caption">Full name</p>
-                      </div>
-                    </div>
-                    <div class="flex gap-4">
-                      <v-icon icon="mdi-information-variant"></v-icon>
-                      <div class="">
-                        <p class="">{{ dev.facutly }}</p>
-                        <p class="text-caption">Faculty</p>
-                      </div>
-                    </div>
-                    <div class="flex gap-4">
-                      <v-icon icon="mdi-account-school-outline"></v-icon>
-                      <div class="">
-                        <p class="">{{ dev.major }}</p>
-                        <p class="text-caption">Major</p>
-                      </div>
-                    </div>
-                    <div class="flex gap-4">
-                      <v-icon icon="mdi-account-convert"></v-icon>
-                      <div class="">
-                        <p class="">{{ dev.year }}</p>
-                        <p class="text-caption">Student Year</p>
-                      </div>
-                    </div>
-                    <div class="flex gap-4">
-                      <v-icon icon="mdi-identifier"></v-icon>
-                      <div class="">
-                        <p class="">{{ dev.code }}</p>
-                        <p class="text-caption">Student ID</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-window-item>
-        </v-window>
-      </v-card>
-    </v-container>
+                </v-card-text>
+              </v-card>
+            </v-window-item>
+          </v-window>
+        </v-card>
+      </v-container>
+    </div>
   </div>
 </template>

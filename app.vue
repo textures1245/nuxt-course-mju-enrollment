@@ -3,9 +3,16 @@ export default {
   components: { Header, Homepage },
   data() {
     return {
+      getDrawer: ref(false),
       startHomepage: true,
     };
   },
+  watch: {
+    getDrawer(newVal) {
+      console.log(this.getDrawer);
+    },
+  },
+  emits: ["openDrawer"],
 };
 </script>
 
@@ -32,7 +39,13 @@ const theme = ref("light");
         </Homepage>
       </v-main>
       <v-main v-else>
-        <Header>
+        <Header
+          @open-drawer="
+            () => {
+              getDrawer = !getDrawer;
+            }
+          "
+        >
           <template #toggleTheme>
             <v-btn
               :prepend-icon="
@@ -45,7 +58,7 @@ const theme = ref("light");
             >
           </template>
         </Header>
-        <Drawer>
+        <Drawer :drawer="getDrawer">
           <template #content-card>
             <div class="py-10 h-full overflow-y-auto thai-p">
               <router-view></router-view>

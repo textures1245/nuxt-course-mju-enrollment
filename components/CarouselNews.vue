@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Campus } from "~~/pages/index.vue";
+import { Campus } from "~~/pages/index.vue.js";
 import { useDisplay } from "vuetify";
 
 export default {

@@ -10,6 +10,7 @@ export default {
   <v-app-bar :border="true" app>
     <template v-slot:prepend>
       <v-app-bar-nav-icon
+        @click="$emit('openDrawer')"
         src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png"
       >
         <v-img

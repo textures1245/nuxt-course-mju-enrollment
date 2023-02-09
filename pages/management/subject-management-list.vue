@@ -24,6 +24,7 @@ export default {
 </script>
 <script setup lang="ts">
 const courseState = useCourseStore();
+let loadingProps = ref(true);
 let courses = ref(<Course[]>courseState.getCourses);
 
 //! watch states
@@ -36,12 +37,16 @@ watch(
   { deep: true }
 );
 
-computed
+computed;
 
 //- methods
 </script>
 <template>
-  <v-container>
+  <LoadingProps
+    v-if="loadingProps"
+    @loaded-async="(loaded) => (loadingProps = loaded)"
+  ></LoadingProps>
+  <v-container v-else>
     <div>
       <v-layout style="height: 50px">
         <v-system-bar window>

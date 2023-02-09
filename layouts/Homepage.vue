@@ -48,6 +48,16 @@ export default {
       },
     };
   },
+  methods: {
+    imgUrl(condition: "main-bg") {
+      switch (condition) {
+        case "main-bg":
+          return new URL("@/assets/img/main_bg.jpg", import.meta.url).href;
+        default:
+          return new URL("@/assets/img/main_bg.jpg", import.meta.url).href;
+      }
+    },
+  },
 };
 </script>
 <template>
@@ -68,11 +78,7 @@ export default {
         </v-btn>
       </v-fab-transition>
     </a>
-    <v-parallax
-      class="opacity-95"
-      scale="0.5"
-      src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/233527606_127844306228376_5341372452305467725_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeENFSz8ye5kJj0PP8QNV2WI_-HRRBx_kqD_4dFEHH-SoKm1hh2__5YDDDZAgMpvAnBLOWEqAy7yxSbsNlcmp2E2&_nc_ohc=sK_hXvCJClsAX846EcG&_nc_ht=scontent.fcnx2-1.fna&oh=00_AfAZCiqCIB_rDKqddfZPlLWEIbDfKRzf8KLwOKm3n91lCA&oe=63E3A850"
-    >
+    <v-parallax class="opacity-95" scale="0.5" :src="imgUrl('main-bg')">
       <div class="text-white grid grid-cols-2 w-9/12 fill-height mx-auto">
         <v-img
           class="place-self-center"

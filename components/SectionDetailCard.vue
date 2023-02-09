@@ -32,7 +32,6 @@ export default {
 </script>
 
 <template>
-
   <v-card class="h-[700px] md:h-[500px]">
     <v-toolbar color="blue">
       <v-app-bar-nav-icon
@@ -56,6 +55,12 @@ export default {
             {{ item }}
           </v-tab>
         </v-tabs>
+      </template>
+
+      <template v-slot:append>
+        <v-btn @click="$router.go(-1)" color="white">
+          <v-icon icon="mdi-chevron-left"></v-icon>
+        </v-btn>
       </template>
     </v-toolbar>
 

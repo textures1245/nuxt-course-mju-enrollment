@@ -21,96 +21,60 @@ export default {
   data() {
     return {
       freezed: true,
-      cards: {
-        first: {
-          title: "ยินดีต้อนรัอนรับสู่มหาวิทยาลัยแม่โจ้",
+      cards: [
+        {
+          title: "ข่าวสารหลักสูตรมหาวิทยาลัยแม่โจ้",
           subtitle: `หลักสูตรของมหาวิทยาลัยแม่โจ้ออกแบบมาเพื่อพัฒนาและยกระดับทักษะของนักศึกษาให้มีความคิดสร้างสรรค์และพัฒนาความสามารถ หลักสูตรนี้เหมาะสำหรับนักศึกษาที่มีความสนใจ
           ในการพัฒนาตนเองและมีความต้องการที่จะมีความสามารถสูงและมีประสิทธิภาพในการทำงานในขณะ
           เดียวกันก็มีส่วนช่วยในการพัฒนาอุตสาหกรรม`,
+          path: {
+            link: "/course-news/",
+            name: "ข่าวสาร",
+          },
+          imgSrc: "https://admissions.mju.ac.th/www/img/y4.jpg",
         },
-      },
+        {
+          title: "ข่าวสารในมหาวิทยาลัยแม่โจ้",
+          subtitle: `"การค้นพบนวัตกรรมโซลูชั่น: ศูนย์วิจัยแห่งใหม่ของมหาวิทยาลัยแม่โจ้ด้านเกษตรกรรมยั่งยืนและพลังงานทดแทน"
+"เสริมพลังคนรุ่นต่อไป: การลงทะเบียนเรียนหลักสูตรเทคโนโลยีและวิศวกรรมศาสตร์ของมหาวิทยาลัยแม่โจ้ที่เพิ่มมากขึ้น"
+"ผู้นำการพัฒนาอย่างยั่งยืน: ข่าวสารล่าสุดจากมหาวิทยาลัยแม่โจ้"
+"พัฒนาเพื่ออนาคต: ความมุ่งมั่นอย่างต่อเนื่องของมหาวิทยาลัยแม่โจ้เพื่อการเกษตรและเทคโนโลยี"`,
+          path: {
+            link: "/activity-news/",
+            name: "ข่าวสาร",
+          },
+          imgSrc: "https://i.ytimg.com/vi/B6YfBmzHiaI/maxresdefault.jpg",
+        },
+      ],
       loadingProps: true,
       //- codename-t api
       display: ref(useDisplay()),
-      campusAPI: "/campusApi",
-      campus: {
-        0: {
-          onLoaded: true,
-          facultyName: "",
-          body: <Campus>{},
-        },
-        1: {
-          onLoaded: true,
-          facultyName: "",
-          body: <Campus>{},
-        },
-        2: {
-          onLoaded: true,
-          facultyName: "",
-          body: <Campus>{},
-        },
-      },
     };
   },
-  mounted() {
-    for (let i = 0; i < 3; i++) {
-      let res = this.fetchApi(
-        `faculty_id=${Math.floor(Math.random() * 10) + 3}`
-      );
-      res
-        .then((campus) => {
-          let key = i as any as keyof Object;
-          if (campus) {
-            this.campus[key].body = campus;
-            this.campus[key]["facultyName"] = {
-              ...campus[0][0],
-            }.faculty_name_th;
-            console.log(this.campus);
-          }
-          this.campus[key]["onLoaded"] = false;
-        })
-        .catch((err) => console.log(err));
-    }
-    this.loadingProps = false;
-  },
-  methods: {
-    async fetchApi(query: string) {
-      const headers = useRequestHeaders([
-        "Access-Control-Allow-Origin",
-        "http://localhost:3000",
-      ]);
-      const res = await $fetch(`${this.campusAPI}?${query}`, {
-        mode: "no-cors",
-        method: "get",
-      });
-      if (res) {
-        try {
-          return [{ ...res }] as Campus[];
-        } catch (err) {
-          console.log(err);
-        }
+  mounted() {},
+  computed: {
+    autoHeight() {
+      if (this.display.smAndDown) {
+        return 500;
       } else {
-        console.log("Value not found");
+        return 350;
       }
-      console.log(res);
     },
   },
+  methods: {},
 };
 </script>
 <template>
-  <div class="bg-emerald-600 h-[40vh] absolute w-full -z-10"></div>
-
-  <v-container>
-    <div v-if="loadingProps" class="w-full">
-      <div class="grid h-[25vh]">
-        <v-img
-          class="place-self-center animate-ping"
-          width="82"
-          src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png"
-        ></v-img>
-      </div>
-    </div>
-    <div v-else class="flex flex-col gap-16">
+  <div
+    v-if="!loadingProps"
+    class="bg-emerald-600 h-[45vh] absolute w-full -z-10"
+  ></div>
+  <LoadingProps
+    v-if="loadingProps"
+    @loaded-async="(loaded) => (loadingProps = loaded)"
+  ></LoadingProps>
+  <v-container v-else>
+    <div class="flex flex-col gap-16">
       <div
         class="hero-text text-4xl flex justify-center items-center gap-6 text-white"
       >
@@ -125,50 +89,26 @@ export default {
       </div>
 
       <div class="w-full grid grid-cols-1 z-10">
-        <NewsCard
-          img-src="https://stu2.mju.ac.th/picture/information/374e7d3c9ff146f6a91c398b91229eb7.jpg"
-          height="10rem"
-          :title="cards.first.title"
-          :sub-title="cards.first.subtitle"
-        ></NewsCard>
+        <v-carousel
+          cycle
+          :height="autoHeight"
+          hide-delimiters
+          hide-delimiter-background
+          show-arrows="hover"
+        >
+          <v-carousel-item v-for="(card, i) in cards">
+            <NewsCard
+              :path="card.path"
+              color-text="!text-black md:text-white"
+              :button-text="'คลิกที่นี้'"
+              :img-src="card.imgSrc"
+              :title="card.title"
+              :sub-title="card.subtitle"
+            ></NewsCard>
+          </v-carousel-item>
+        </v-carousel>
       </div>
     </div>
-    <!-- <div v-if="freezed">
-      <div class="flex flex-col gap-16">
-        <div
-          class="hero-text text-4xl flex justify-center items-center gap-6 text-white"
-        >
-          <img
-            width="64"
-            src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png"
-          />
-          <div class="">
-            <p class="underline underline-offset-4">MAEJO UNIVERSITY</p>
-            <p>COURSE PLAN NEW</p>
-          </div>
-        </div>
-
-        <div class="w-full grid grid-cols-1 z-10">
-          <NewsCard
-            img-src="https://stu2.mju.ac.th/picture/information/374e7d3c9ff146f6a91c398b91229eb7.jpg"
-            height="10rem"
-            :title="cards.first.title"
-            :sub-title="cards.first.subtitle"
-          ></NewsCard>
-        </div>
-
-        <section v-for="(n, i) in 3">
-          <div v-if="campus[i].body[0][0] != undefined" class="">
-            <div class="flex justify-center my-2">
-              <button class="btn glass text-black text-2xl y-10 thai-p">
-                {{ campus[i]["facultyName"] }}
-              </button>
-            </div>
-            <CarouselNews :campuses="campus[i]['body'][0]"></CarouselNews>
-          </div>
-        </section>
-      </div>
-    </div> -->
   </v-container>
 </template>
 <style scoped>
